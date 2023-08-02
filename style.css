@@ -1,0 +1,243 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+.container {
+    display: grid;
+    height: 100%;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: min-content 6fr;
+}
+
+.sidebar {
+    background-color: #1992d4;
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row: 1 / 3;
+    padding-left: 20px;
+    padding-top: 10px;
+    align-content: start;
+    gap: 50px
+}
+
+.sidebar svg {
+    fill:white;
+}
+
+.sidebar .dashboard svg {
+    width: 32px;
+    height: auto;
+}
+
+.sidebar .dashboard {
+    margin-left: -10px;
+}
+
+.group-1 svg,
+.group-2 svg {
+    width: 16px;
+    height: auto;
+}
+
+.group-1,
+.group-2,
+.dashboard {
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    gap: 15px;
+    justify-content: start;
+}
+
+.header svg,
+.content svg {
+    width: 20px;
+    height: auto;
+}
+
+.header {
+    display: grid;
+    grid-template-columns: auto auto;
+    align-content: center;
+    z-index:1;
+    box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+    padding: 10px 30px 10px 0px;
+    row-gap: 10px;
+}
+
+.header .search input {
+    background-color: #e2e8f0;
+    border: none;
+    border-radius: 25px;
+    height: 24px;
+}
+
+.header .search {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    justify-content: start;
+    gap: 15px;
+}
+
+.header .search svg {
+    margin-left: 40px;
+}
+
+.header .alert-area img {
+    width: 48px;
+    height: auto;
+}
+
+.header .alert-area {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    justify-self: end;
+}
+
+.header .greeting-area img {
+    width: 64px;
+    height: auto;
+    margin-left: 40px;
+}
+
+.header .greeting-area {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: start;
+    align-items: center;
+    gap: 10px;
+}
+
+.header .create-area button {
+    color: white;
+    background-color: #1992d4;
+    border: none;
+    border-radius: 25px;
+    padding: 10px 20px;
+}
+
+.header .create-area {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    justify-self: end;
+}
+
+.content {
+    background-color: #e2e8f0;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    padding: 20px;
+    gap: 20px;
+}
+
+.projects .project-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.projects .project {
+    display: grid;
+    background-color: white;
+    border-left: orange 5px solid;
+    border-radius: 5px;
+    padding: 15px;
+}
+
+.project .project-title {
+    font-size: 16px;
+}
+
+.project .project-icons {
+    justify-self: end;
+}
+
+.project .project-description {
+    color: gray;
+    font-weight: normal;
+    font-size: 12px;
+}
+
+.announcement-trending-container {
+    display: grid;
+}
+
+.announcements .announcement-container {
+    display: grid;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.announcement-content {
+    font-size: 12px;
+    font-weight: normal;
+    color: gray;
+}
+
+.announcement-title {
+    font-size: 14px;
+}
+
+.trending {
+    align-self: end;
+}
+
+.trending img {
+    width: 48px;
+    height: auto;
+}
+
+.trending .trending-container {
+    display: grid;
+    gap: 10px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 15px;
+    margin-top: 10px;
+}
+
+.trending-item {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: start;
+    align-items: center;
+    gap: 10px;
+}
+
+.trending-username {
+    font-weight: 600;
+    font-size: 12px;
+}
+
+.trending-project {
+    color: gray;
+    font-weight: normal;
+    font-size: 12px;
+}
